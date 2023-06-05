@@ -1,0 +1,27 @@
+GET  http://localhost:8000/test
+
+###
+
+GET  http://localhost:8000/test/647caf07ce7dff719184f39f
+
+###
+
+POST http://localhost:8000/test/create
+Content-Type: application/json
+
+{
+    "name": "test name 1",
+    "number": 44
+}
+
+###
+PATCH  http://localhost:8000/test/647caf07ce7dff719184f39f
+Content-Type: application/json
+
+{
+    "name": "update test name"
+}
+
+
+###
+DELETE http://localhost:8000/test/647ca1e1baaa4b899c93ff9c
