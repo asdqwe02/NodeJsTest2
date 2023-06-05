@@ -18,19 +18,6 @@ router.get('/', async (req, res) => {
 // Get one test data
 router.get('/:id', getTestData, async (req, res) => {
     res.json(res.data)
-    // req.params.id to get the 
-    // try {
-    //     // const data = await TestModel.find(
-    //     //     {
-    //     //         _id: req.params.id
-    //     //     }
-    //     // );
-    //     const data = (res.data);
-    //     res.send(data);
-    //     // res.send(req.params.id)
-    // } catch (err) {
-    //     res.status(500).json({ message: err.message });
-    // }
 })
 
 
